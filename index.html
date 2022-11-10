@@ -24,11 +24,12 @@
         <span class="ms-2">ltFall22_gregsList</span>
       </a>
       <button class="btn btn-primary me-3" onclick="app.carsController.showCars()">Cars</button>
-      <button class="btn btn-primary">Homes</button>
+      <button class="btn btn-primary" onclick="app.homesController.showHomes()">Homes</button>
     </nav>
   </header>
   <main>
     <div class="container-fluid">
+      <div class="row" id="showHouse"></div>
       <div class="row my-3">
         <div class="col-6 m-auto" id="listing-form">
           <!-- NOTE form for our current listing type -->
@@ -75,21 +76,22 @@
       <div class="row" id="listings">
         <!-- FIXME Step 3: Build out a template for our model -->
         <!-- STUB Car template -->
-        <!-- <div class="col-4 p-4">
+        <div class="col-4 p-4">
           <div class="card">
-            <img src="https://www.autotrader.com/wp-content/uploads/2020/02/vueredline-1.jpg" class="card-img-top"
-              alt="vue">
+            <img
+              src="https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg"
+              class="card-img-top" alt="vue">
             <div class="card-body">
               <h5 class="card-title d-flex justify-content-between mb-2">
-                <span>Saturn Vue</span>
-                <span>$1000</span>
+                <span>Modern Home</span>
+                <span>$1000000</span>
               </h5>
               <button class="btn btn-primary">
                 See Details
               </button>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </main>
